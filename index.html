@@ -2,18 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Sessiors</title>
     <link rel="stylesheet" href="style.css">
-    <title>Shahnawaj Rangrej</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <body>
-    <nav>
-    <div class="head1">About Us</div>
-    </nav>
-    <div class="main">
-        <div class="left"></div>
-        <div class="right"></div>
+    <div class="game">
+        <div class="choices">
+      <div class="choice" id="rock">
+        <img src="rock.png" alt="">
+      </div>
+      <div class="choice" id="paper">
+        <img src="paper.png" alt="">
+      </div>
+      <div class="choice" id="scissors">
+        <img src="Scissors.png" alt="">
+      </div>
     </div>
+    <div class="score-board">
+        <div class="user-score">
+            <div class="score1"><p id="user">0</p></div>
+            <p id="user-score">You</p>
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <div class="comp-score">
+            <div class="score2"><p id="computer">0</p></div>
+            <p id="comp-score">Computer</p>
+            <i class="fa-solid fa-desktop"></i>
+        </div>
+    </div>
+        <div class="msg-container"><p id="msg">Select Your Choice</p></div>
+   
+        <script src="app.js"></script>
+</div>
 </body>
 </html>
