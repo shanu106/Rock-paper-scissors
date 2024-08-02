@@ -27,6 +27,8 @@ const showWinner = (userwin , userchoice , compchoice) => {
         msg.style.backgroundColor = "green";
     } else {
         console.log("computer win");
+        compscore++;
+        compscorepara.innerHTML=compscore;
         msg.innerText = `You lose! computer's ${compchoice} beats ${userchoice}`;
         msg.style.backgroundColor = "red";
         
