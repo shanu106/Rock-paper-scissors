@@ -61,3 +61,19 @@ img {
   padding: 1rem;
   border-radius: 1rem;
 }
+.desc {
+  height: 15vh;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.desc a {
+  font-size: 5vh;
+  padding: 8px 8px 8px 8px;
+  border-radius: 13%;
+  text-decoration: none;
+  background-color: black;
+  color: #fff;
+}
