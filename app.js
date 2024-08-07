@@ -6,7 +6,12 @@ const msg = document.querySelector("#msg");
 // const options = document.querySelectorAll(".choice");
 const userscorepara = document.querySelector("#user");
 const compscorepara = document.querySelector("#computer");
+const harish = document.querySelector("#rock");
+const userchoice1 = document.querySelector("#user1");
+const compchoice1 = document.querySelector("#computer1");
 
+
+//  const img1 = document.querySelector("#rockimg");
 
 const gencompchoice = () => {
     const options = ["rock", "paper", "scissors"];
@@ -14,6 +19,8 @@ const gencompchoice = () => {
     return options[rdmidx];
 };
 const GameDraw = () => {
+   compchoice1.innerText = `computer's Choice is ${compchoice} `
+        userchoice1.innerText = `Your choice is ${userchoice}`
 msg.innerHTML = "Game was Draw. Try again";
 msg.style.backgroundColor = "#081b31";
 }
@@ -21,6 +28,8 @@ const showWinner = (userwin , userchoice , compchoice) => {
     if(userwin) {
         console.log("shahanwaj")
         userscore++;
+        compchoice1.innerText = `computer's Choice is ${compchoice} `
+        userchoice1.innerText = `Your choice is ${userchoice}`
         userscorepara.innerHTML = userscore;
         // msg.innerHTML = "You win! your" ${userchoice} "beats" {$compchoice};
         msg.innerText = `You win! Your ${userchoice} beats ${compchoice}`;
@@ -28,6 +37,8 @@ const showWinner = (userwin , userchoice , compchoice) => {
     } else {
         console.log("computer win");
         compscore++;
+         compchoice1.innerText = `computer's Choice is ${compchoice} `
+        userchoice1.innerText = `Your choice is ${userchoice}`
         compscorepara.innerHTML=compscore;
         msg.innerText = `You lose! computer's ${compchoice} beats ${userchoice}`;
         msg.style.backgroundColor = "red";
