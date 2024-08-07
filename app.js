@@ -6,7 +6,6 @@ const msg = document.querySelector("#msg");
 // const options = document.querySelectorAll(".choice");
 const userscorepara = document.querySelector("#user");
 const compscorepara = document.querySelector("#computer");
-const harish = document.querySelector("#rock");
 const userchoice1 = document.querySelector("#user1");
 const compchoice1 = document.querySelector("#computer1");
 
