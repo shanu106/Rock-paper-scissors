@@ -22,6 +22,8 @@ const GameDraw = (userchoice, compchoice) => {
    compchoice1.innerText = `computer's Choice is ${compchoice} `
         userchoice1.innerText = `your choice is ${userchoice}`
 msg.innerHTML = "Game was Draw. Try again";
+userchoice1.style.backgroundColor = "white";
+        compchoice1.style.backgroundColor = "white";
 msg.style.backgroundColor = "#081b31";
 }
 const showWinner = (userwin , userchoice , compchoice) => {
@@ -30,6 +32,8 @@ const showWinner = (userwin , userchoice , compchoice) => {
         userscore++;
         compchoice1.innerText = `computer's Choice is ${compchoice} `
         userchoice1.innerText = `Your choice is ${userchoice}`
+        userchoice1.style.backgroundColor = "green";
+        compchoice1.style.backgroundColor = "red";
         userscorepara.innerHTML = userscore;
         // msg.innerHTML = "You win! your" ${userchoice} "beats" {$compchoice};
         msg.innerText = `You win! Your ${userchoice} beats ${compchoice}`;
@@ -38,6 +42,8 @@ const showWinner = (userwin , userchoice , compchoice) => {
         console.log("computer win");
         compscore++;
         compscorepara.innerHTML=compscore;
+        userchoice1.style.backgroundColor = "red";
+        compchoice1.style.backgroundColor = "green";
         msg.innerText = `You lose! computer's ${compchoice} beats ${userchoice}`;
         msg.style.backgroundColor = "red";
         
